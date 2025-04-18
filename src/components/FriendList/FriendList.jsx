@@ -1,11 +1,11 @@
 import React from "react";
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 import FriendListItem from "../FriendListItem/FriendListItem";
 
 const FriendList = ({ friends }) => {
   return (
-    <div>
-      <ul>
+    <div className="bg-green-400 text-white p-5">
+      <ul className="list-none flex flex-row">
         {friends.map((friends) => {
           return (
             <li key={friends.id}>
@@ -23,12 +23,12 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.PropType = {
-  friends: PropType.arrayOf(
-    PropType.shape({
-      avatar: PropType.string.isRequired,
-      name: PropType.string.isRequired,
-      isOnline: PropType.bool.isRequired,
-      id: PropType.number.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
     })
   ),
 };

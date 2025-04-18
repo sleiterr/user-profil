@@ -1,0 +1,13 @@
+.status {
+  font-size: 16px;
+  letter-spacing: 0.06px;
+  color: #666;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
