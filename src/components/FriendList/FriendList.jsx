@@ -5,7 +5,7 @@ import "./FriendList.module.css"
 
 const FriendList = ({ friends }) => {
   return (
-    <div className="bg-green-400 w-[220px] h-full pb-[60px] pt-[60px]">
+    <div className="bg-green-400 w-[220px] h-full pb-[60px] pt-[60px] ">
       <ul className="list-none flex flex-col items-center justify-center gap-[45px] h-full">
         {friends.map((friends) => {
           return (
