@@ -13,12 +13,12 @@ const Profile = ({ name, tag, location, image, stats }) => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full ">
-          <ul className="flex flex-col items-center justify-center gap-[6px] w-auto pt-[30px] pb-[25px] text-white font-normal text-[26px] tracking-wide">
+          <ul className="flex flex-col items-center justify-center w-auto pt-[30px] pb-[25px] text-white font-normal text-[26px] tracking-wide gap-[6px]">
             <li>
-              <p className="font-medium text-5xl text-shadow-red-50">{name}</p>
+              <p className="font-medium text-5xl">{name}</p>
             </li>
             <li>
-              <p>@ {tag}</p>
+              <p>@{tag}</p>
             </li>
             <li>
               <p>{location}</p>
