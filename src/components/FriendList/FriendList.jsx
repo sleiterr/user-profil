@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import FriendListItem from "../FriendListItem/FriendListItem";
+import "./FriendList.module.css"
 
 const FriendList = ({ friends }) => {
   return (
-    <div className="bg-green-400 text-white p-5">
-      <ul className="list-none flex flex-row">
+    <div className="bg-green-400 w-[220px] h-full pb-[60px] pt-[60px]">
+      <ul className="list-none flex flex-col items-center justify-center gap-[45px] h-full">
         {friends.map((friends) => {
           return (
             <li key={friends.id}>

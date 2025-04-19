@@ -9,18 +9,20 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div className="">
-        <Profile
-          name={userData.username}
-          tag={userData.tag}
-          location={userData.location}
-          image={userData.avatar}
-          stats={userData.stats}
-        />
-      </div>
-      <FriendList friends={friends} />
-    </div>
+    <main>
+      <section>
+        <div className="flex flex-row-reverse">
+          <Profile
+            name={userData.username}
+            tag={userData.tag}
+            location={userData.location}
+            image={userData.avatar}
+            stats={userData.stats}
+          />
+          <FriendList friends={friends} />
+        </div>
+      </section>
+    </main>
   );
 }
 

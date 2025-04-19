@@ -5,9 +5,15 @@
 }
 
 .online {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
   color: green;
 }
 
 .offline {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
   color: red;
 }
