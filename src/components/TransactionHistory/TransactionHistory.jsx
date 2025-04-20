@@ -2,6 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import { clsx } from "clsx";
 
 const TransactionHistory = ({ transaction }) => {
   return (
@@ -17,9 +18,11 @@ const TransactionHistory = ({ transaction }) => {
         <tbody className="">
           {transaction.map(({ id, type, amount, currency }) => (
             <tr
-              className={`divide-x-2 divide-gray-300 ${
-                type === "withdrawal" ? "bg-gray-200" : ""
-              }`}
+              className={clsx(
+                " divide-x-2",
+                "divide-gray-300",
+                type === "withdrawal" && "bg-gray-200"
+              )}
               key={id}
             >
               <td className="py-2 px-4">{type}</td>
