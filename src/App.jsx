@@ -25,7 +25,9 @@ function App() {
       </section>
       <section>
         <div className="pt-[90px] pb-[90px]">
-          <h2 className="text-center p-6">Transaction History</h2>
+          <h2 className="text-center pb-[40px] font-medium text-6xl text-white/90 tracking-[0.02em]">
+            Transaction History
+          </h2>
           <TransactionHistory transaction={transaction} />
         </div>
       </section>

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const TransactionHistory = ({ transaction }) => {
   return (
     <div className="flex items-center justify-center">
-      <table className="min-w-7xl text-center text-sm/6 whitespace-nowrap bg-amber-50">
+      <table className="min-w-7xl text-center text-sm/6 whitespace-nowrap bg-amber-50 shadow-xl/50">
         <thead className="bg-gray-300 ">
           <tr className="text-xl">
             <th className="py-2 px-4 ">Contact</th>
